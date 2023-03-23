@@ -5,7 +5,7 @@ import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap";
 import "../src/assets/sass/main.scss"
 import Footer from './components/Footer';
 

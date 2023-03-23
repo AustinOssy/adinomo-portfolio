@@ -2,10 +2,32 @@
 @import "./navbar";
 @import "./footer";
 
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 }
+::-webkit-scrollbar{
+	width: 7px;
+}
+::-webkit-scrollbar-track{
+	background: rgba($color: $secondary, $alpha: 0.3);
+	padding: 5px;
+	width: 6px;
+}
+::-webkit-scrollbar-thumb{
+	background: $primary;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba($color: $primary, $alpha: 0.9);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
 body {
 	width: 100%;
 	font-family: $poppins;
@@ -16,7 +38,7 @@ body {
 	background-color: rgba($color: $light, $alpha: 0.8);
 }
 .btn {
-	background-color: $secondary !important;
+	background-color: $tetiary !important;
 	padding: 1rem 4rem;
 	font-weight: 600;
 	font-size: 20px;
@@ -24,9 +46,6 @@ body {
 }
 
 .home {
-	&__content {
-		height: 600px;
-	}
 	&__name {
 		font-weight: bold;
 	}
