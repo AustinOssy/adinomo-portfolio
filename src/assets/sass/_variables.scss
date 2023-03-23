@@ -1,0 +1,25 @@
+$primary: #343F71;
+$secondary: #FBC40E;
+$dark: rgb(29, 29, 29);
+$light: #fff;
+
+$border-radius: 7px;
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$header-height: 100px;
+
+@font-face {
+	font-family: "poppins";
+	src: url("/src/assets/Poppins-Regular.ttf");
+}
+$poppins: "poppins";
+
+@mixin breakpoint($point) {
+	@if $point == md {
+		@media (min-width: 48em) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./navbar";
+@import "./footer";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	width: 100%;
+	font-family: $poppins;
+	color: $dark;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-color: rgba($color: $light, $alpha: 0.8);
+}
+.btn {
+	background-color: $secondary !important;
+	padding: 1rem 4rem;
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.home {
+	&__content {
+		height: 600px;
+	}
+	&__name {
+		font-weight: bold;
+	}
+	&__role {
+		font-size: 4rem;
+		font-weight: bold;
+	}
+	&__text {
+		width: 80%;
+		font-size: 22px;
+		font-weight: 200;
+	}
+}
