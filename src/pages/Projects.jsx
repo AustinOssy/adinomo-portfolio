@@ -2,7 +2,10 @@ import React from "react";
 import "/src/assets/sass/_projects.scss";
 import huddle from "/src/assets/img/huddle.png";
 import space from "/src/assets/img/space-tour.png";
-import spyces from '/src/assets/img/spyces.png';
+import spyces from "/src/assets/img/spyces.png";
+import todo from "/src/assets/img/todo.png";
+import multiform from "/src/assets/img/multi-step-form.png";
+import newshome from "/src/assets/img/new-homepage.png";
 
 function Projects() {
 	function ProjectCard(props) {
@@ -15,7 +18,9 @@ function Projects() {
 				/>
 				<h5>{props.name}</h5>
 				<p>Tech used: {props.tech}</p>
-				<button className="project__btnV">View</button>
+				<button className="project__btnV text-light">
+					<a href={props.ref}>View</a>
+				</button>
 			</div>
 		);
 	}
@@ -26,47 +31,49 @@ function Projects() {
 				<div className="projects__col">
 					<ProjectCard
 						name="Huddle Landing Page"
-						summary="summary"
 						img={huddle}
 						tech="HTML, CSS"
+						ref={"https://huddle-etse.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
 					<ProjectCard
 						name="Space-Tourism"
-						summary="Space-Tourism"
 						img={space}
 						tech="HTML, CSS, Bootstrap, React"
+						ref={"https://space-tourism-etse.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
 					<ProjectCard
 						name="Spyces Food Recipe App"
-						summary="summary"
 						img={spyces}
 						tech="HTML, CSS, Bootstrap, React"
+						ref={"https://spyces.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
 					<ProjectCard
-						name="Baloel"
-						summary="summary"
-						img={huddle}
-						tech="HTML, SCSS, Bootstrap, React"
+						name="TODO list"
+						img={todo}
+						tech="HTML, SCSS, React, Redux-toolkit"
+						ref={"https://todo-list-adinomo.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
 					<ProjectCard
-						name="name"
-						summary="summary"
-						img={huddle}
+						name="Multi step form"
+						img={multiform}
+						tech="HTML, SCSS, React"
+						ref={"https://multistep-forms.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
 					<ProjectCard
-						name="name"
-						summary="summary"
-						img={huddle}
+						name="News Homepage"
+						img={newshome}
+						tech="HTML, SCSS, React"
+						ref={"https://multistep-forms.netlify.app"}
 					/>
 				</div>
 			</div>

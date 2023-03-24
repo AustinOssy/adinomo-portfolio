@@ -40,6 +40,7 @@ function Skills() {
 						<div className="skills__list">GIT</div>
 						<div className="skills__list">Github</div>
 						<div className="skills__list">NPM</div>
+						<div className="skills__list">Redux-toolkit</div>
 					</div>
 				</div>
 			</div>
