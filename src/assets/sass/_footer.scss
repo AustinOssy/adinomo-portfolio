@@ -1,22 +1,10 @@
 @import "./variables";
 
 .footer {
-	&__content {
-		background-color: $dark;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		height: 50px;
-		color: $light;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		a{
-			color: $light;
-		}
+	background-color: $dark;
+	position: fixed;
+	bottom: 0;
+	&__copyright{
+		font-size: 15px;
 	}
-	&__icons{
-		display: flex;
-	}
-
 }

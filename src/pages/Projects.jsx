@@ -21,8 +21,8 @@ function Projects() {
 	}
 
 	return (
-		<div className=" container projects__content">
-			<div className="projects__row">
+		<div className="container pb-3">
+			<div className="d-flex flex-wrap gap-5 gap-xl-4 pb-5 pt-5 justify-content-center">
 				<div className="projects__col">
 					<ProjectCard
 						name="Huddle Landing Page"
@@ -47,8 +47,6 @@ function Projects() {
 						tech="HTML, CSS, Bootstrap, React"
 					/>
 				</div>
-			</div>
-			<div className="projects__row">
 				<div className="projects__col">
 					<ProjectCard
 						name="Baloel"
