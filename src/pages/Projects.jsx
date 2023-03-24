@@ -18,8 +18,8 @@ function Projects() {
 				/>
 				<h5>{props.name}</h5>
 				<p>Tech used: {props.tech}</p>
-				<button className="project__btnV text-light">
-					<a href={props.link}>View</a>
+				<button className="project__btnV pointer-event">
+					<a href={props.link} className="text-light text-decoration-none">View</a>
 				</button>
 			</div>
 		);
