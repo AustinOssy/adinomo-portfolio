@@ -26,7 +26,7 @@ function Projects() {
 	}
 
 	return (
-		<div className="container pb-3">
+		<div className="container pb-5">
 			<div className="d-flex flex-wrap gap-5 gap-xl-4 pb-5 pt-5 justify-content-center">
 				<div className="projects__col">
 					<ProjectCard
@@ -56,7 +56,7 @@ function Projects() {
 					<ProjectCard
 						name="TODO list"
 						img={todo}
-						tech="HTML, SCSS, React, Redux-toolkit"
+						tech="SCSS, React, Redux-toolkit"
 						link={"https://todo-list-adinomo.netlify.app"}
 					/>
 				</div>

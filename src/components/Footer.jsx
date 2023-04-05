@@ -7,8 +7,8 @@ import { IconContext } from "react-icons";
 
 function Footer() {
 	return (
-		<div className="footer d-flex justify-content-between p-2 sticky-bottom container-fluid">
-			<div className="footer__icons">
+		<div className="footer d-sm-flex align-items-center justify-content-between p-2 sticky-bottom container-fluid">
+			<div className="footer__icons text-center">
 				<IconContext.Provider value={{ size: "1.2rem", color:'white', className: "me-1" }}>
 					<a href="https://github.com/Adinomo">
 						<AiOutlineGithub />
@@ -19,8 +19,8 @@ function Footer() {
 					<HiOutlineMail />
 				</IconContext.Provider>
 			</div>
-			<div className="text-white footer__copyright">
-				© Copyright 2023. Made by Austin Ossy
+			<div className="text-white text-center footer__copyright">
+				© Austin Ossy 2023
 			</div>
 		</div>
 	);

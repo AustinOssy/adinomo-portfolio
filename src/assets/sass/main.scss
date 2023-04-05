@@ -1,9 +1,15 @@
 @import "./variables";
 @import "./navbar";
 @import "./footer";
+@import './contacts';
 
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 * {
 	box-sizing: border-box;
@@ -38,13 +44,17 @@ body {
 	background-color: rgba($color: $light, $alpha: 0.8);
 }
 .btn {
-	background-color: $tetiary !important;
-	padding: 1rem 4rem;
-	font-weight: 600;
+	background-color: $primary !important;
+	padding: 0.75rem 2.5rem;
+	font-weight: 500;
 	font-size: 20px;
-	letter-spacing: 1px;
+	color: white;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: white;
+		background-color: rgba(52,63,113,0.8);
+	}
 }
-
 .home {
 	&__name {
 		font-weight: bold;
