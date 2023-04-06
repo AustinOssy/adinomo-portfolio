@@ -1,16 +1,27 @@
-import React from 'react';
-import { AiOutlineGithub } from 'react-icons/ai';
-import { AiFillLinkedin } from 'react-icons/ai';
+import React from "react";
+import { AiOutlineGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { ImLocation2 } from "react-icons/im";
+import { BsTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import { IconContext } from "react-icons";
-
+import '../assets/sass/_contacts.scss';
 
 function Contacts() {
 	return (
-		<div className="container">
-			<div className="contacts d-flex justify-content-between">
-				<p>Contact me: +2348130546909</p>
-				<p>Email: austinossy20@gmail.com</p>
-				<p>Location: Nigeria</p>
+		<div className="container pt-4 pb-4">
+			<div className="contacts justify-content-between px-2">
+				<IconContext.Provider value={{ color: "#343F71" }}>
+					<p>
+						<BsTelephoneFill /> +2348130546909
+					</p>
+					<p>
+						<MdEmail /> austinossy20@gmail.com
+					</p>
+					<p>
+						<ImLocation2 /> Nigeria
+					</p>
+				</IconContext.Provider>
 			</div>
 			<div className="form-floating mb-3">
 				<form
@@ -29,20 +40,24 @@ function Contacts() {
 						/>
 						<textarea placeholder="message" />
 						<input
-							className="btn"
+							className="btn fs-6"
 							type="button"
 							value="send"
 						/>
 					</div>
 				</form>
 			</div>
-			<div className="profiles">
-				<IconContext.Provider value={{ size: 27 }}>
+			<div className="profiles d-flex flex-column px-2">
+				<IconContext.Provider value={{ size: 19, color: "white" }}>
 					<p>
-						<AiOutlineGithub />
+						<button className="btn-icon text-white rounded-pill px-2">
+							<AiOutlineGithub /> Github
+						</button>
 					</p>
 					<p>
-						<AiFillLinkedin />
+						<button className="btn-icon text-white rounded-pill">
+							<AiFillLinkedin /> Linkedin
+						</button>
 					</p>
 				</IconContext.Provider>
 			</div>
