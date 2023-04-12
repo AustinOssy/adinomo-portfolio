@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 function NavBar() {
 	return (
 		<header className="container-fluid bg-primary sticky-top">
-			<nav className="navbar navbar-expand-sm navbar-light">
+			<nav className="navbar navbar-expand-sm navbar-dark">
 				<div className="container">
 					<a
 						className="navbar-brand text-light fs-4"
@@ -14,7 +14,7 @@ function NavBar() {
 						A◉
 					</a>
 					<button
-						className="navbar-toggler d-lg-none"
+						className="navbar-toggler d-lg-none border-0"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#collapsibleNavId"

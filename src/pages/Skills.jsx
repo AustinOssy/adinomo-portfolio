@@ -10,7 +10,7 @@ function Skills() {
 					skills mostly in terms of programming and technology.
 				</p>
 			</div>
-			<div className="skills__row pb-2">
+			<div className="skills__row pb-3">
 				<div className="skills__col">
 					<div className="skills__knowMe">
 						<p>
@@ -24,7 +24,7 @@ function Skills() {
 						<button className="btn skills__contact">CONTACTS →</button>
 					</div>
 				</div>
-				<div className="skills__col pb-5 p-3 pt-0">
+				<div className="skills__col pb-5 p-3">
 					<div className="skills__technical gap-2">
 						<div className="skills__list">HTML</div>
 						<div className="skills__list">CSS</div>

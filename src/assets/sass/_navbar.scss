@@ -4,5 +4,9 @@
 	&-brand{
 	   letter-spacing: -6px;
 	}
+	&-toggler:focus, &-toggler:active, &-toggler-icon:focus{
+		box-shadow: none !important;
+		outline: none !important;
+	}
 
 }
