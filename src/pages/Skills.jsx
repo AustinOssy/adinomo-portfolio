@@ -24,7 +24,7 @@ function Skills() {
 						<button className="btn skills__contact">CONTACTS →</button>
 					</div>
 				</div>
-				<div className="skills__col pb-5">
+				<div className="skills__col pb-5 p-3 pt-0">
 					<div className="skills__technical">
 						<div className="skills__list">HTML</div>
 						<div className="skills__list">CSS</div>
