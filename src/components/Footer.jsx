@@ -6,6 +6,8 @@ import { HiOutlineMail } from "react-icons/hi";
 import { IconContext } from "react-icons";
 
 function Footer() {
+	const year = new Date().getFullYear()
+
 	return (
 		<div className="footer d-sm-flex align-items-center justify-content-between p-2 sticky-bottom container-fluid">
 			<div className="footer__icons text-center">
@@ -20,7 +22,7 @@ function Footer() {
 				</IconContext.Provider>
 			</div>
 			<div className="text-white text-center footer__copyright">
-				© Austin Ossy 2023
+				© Austin Ossy {year}
 			</div>
 		</div>
 	);
