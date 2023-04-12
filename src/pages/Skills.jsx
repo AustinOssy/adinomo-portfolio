@@ -25,7 +25,7 @@ function Skills() {
 					</div>
 				</div>
 				<div className="skills__col pb-5 p-3 pt-0">
-					<div className="skills__technical">
+					<div className="skills__technical gap-2">
 						<div className="skills__list">HTML</div>
 						<div className="skills__list">CSS</div>
 						<div className="skills__list">Javascript</div>
