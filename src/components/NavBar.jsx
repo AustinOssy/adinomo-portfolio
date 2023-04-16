@@ -58,7 +58,11 @@ function NavBar() {
 						</ul>
 						<ul className="navbar-nav mt-2 mt-lg-0">
 							<li className="nav-item">
-								<button className="cv-btn nav-link px-2">Download CV</button>
+								<a
+									href="../assets/resume.pdf"
+									download>
+									<button className="cv-btn nav-link px-3">Resume</button>
+								</a>
 							</li>
 						</ul>
 					</div>
