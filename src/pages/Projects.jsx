@@ -6,6 +6,7 @@ import spyces from "/src/assets/img/spyces.png";
 import todo from "/src/assets/img/todo.png";
 import multiform from "/src/assets/img/multi-step-form.png";
 import newshome from "/src/assets/img/new-homepage.png";
+import {BsBoxArrowRight} from 'react-icons/bs';
 
 function Projects() {
 	function ProjectCard(props) {
@@ -13,14 +14,20 @@ function Projects() {
 			<div className="project__card">
 				<img
 					src={props.img}
-					width={300}
 					alt="picture"
+					className="project__image"
 				/>
-				<h5>{props.name}</h5>
-				<p>Tech used: {props.tech}</p>
-				<button className="project__btnV pointer-event">
-					<a href={props.link} className="text-light text-decoration-none">View</a>
-				</button>
+				<div className="project__body">
+					<h5>{props.name}</h5>
+					<p>Tech used: {props.tech}</p>
+					<button className="project__btnV pointer-event p-1 px-3">
+						<a
+							href={props.link}
+							className="text-light text-decoration-none">
+							<BsBoxArrowRight /> view
+						</a>
+					</button>
+				</div>
 			</div>
 		);
 	}

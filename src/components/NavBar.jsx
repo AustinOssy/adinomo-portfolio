@@ -26,7 +26,7 @@ function NavBar() {
 					<div
 						className="collapse navbar-collapse"
 						id="collapsibleNavId">
-						<ul className="navbar-nav me-auto mt-2 mt-lg-0 ">
+						<ul className="navbar-nav me-auto mt-2 mt-lg-0">
 							<li className="nav-item">
 								<NavLink
 									to={"/"}
@@ -54,6 +54,11 @@ function NavBar() {
 									className="nav-link text-light">
 									CONTACTS
 								</NavLink>
+							</li>
+						</ul>
+						<ul className="navbar-nav mt-2 mt-lg-0">
+							<li className="nav-item">
+								<button className="cv-btn nav-link px-2">Download CV</button>
 							</li>
 						</ul>
 					</div>
