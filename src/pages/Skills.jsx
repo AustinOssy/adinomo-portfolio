@@ -23,6 +23,14 @@ function Skills() {
 						</p>
 						<button className="btn skills__contact">CONTACTS →</button>
 					</div>
+					<a
+						href="../assets/resume.pdf"
+						className="text-decoration-none"
+						download>
+						<button className="cv-btn-skill nav-link p-2 px-3 mx-1 mt-3">
+							Resume
+						</button>
+					</a>
 				</div>
 				<div className="skills__col pb-5 p-3">
 					<div className="skills__technical gap-2">
@@ -40,7 +48,6 @@ function Skills() {
 					</div>
 				</div>
 			</div>
-			<button className="cv-btn-skill nav-link p-2 mx-1">Download CV</button>
 		</div>
 	);
 }
