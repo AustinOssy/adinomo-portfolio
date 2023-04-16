@@ -6,6 +6,7 @@ import spyces from "/src/assets/img/spyces.png";
 import todo from "/src/assets/img/todo.png";
 import multiform from "/src/assets/img/multi-step-form.png";
 import newshome from "/src/assets/img/new-homepage.png";
+import estore from "/src/assets/img/e-store.png";
 import {BsBoxArrowRight} from 'react-icons/bs';
 
 function Projects() {
@@ -77,10 +78,10 @@ function Projects() {
 				</div>
 				<div className="projects__col">
 					<ProjectCard
-						name="News Homepage"
-						img={newshome}
-						tech="HTML, SCSS, React"
-						link={"https://multistep-forms.netlify.app"}
+						name="E-store"
+						img={estore}
+						tech="HTML, SCSS, Bootstrap, React, Redux-toolkit"
+						link={"https://etse-store.netlify.app/"}
 					/>
 				</div>
 			</div>
