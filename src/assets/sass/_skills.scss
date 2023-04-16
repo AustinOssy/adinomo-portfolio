@@ -40,3 +40,16 @@
 		background-color: $tetiary !important;	
 	}
 }
+
+.cv-btn-skill {
+	border: 1px solid $primary;
+	outline: none;
+	border-radius: 4px;
+	background-color: white;
+	color: $primary !important;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: white!important;
+		background-color: $primary;
+	}
+}

@@ -12,7 +12,7 @@ function Skills() {
 			</div>
 			<div className="skills__row pb-3">
 				<div className="skills__col">
-					<div className="skills__knowMe">
+					<div className="skills__knowMe p-1">
 						<p>
 							I'm a Frontend Web Developer who builds the Front-end of Websites and Web
 							Applications that leads to the success of the overall product. Check out
@@ -40,6 +40,7 @@ function Skills() {
 					</div>
 				</div>
 			</div>
+			<button className="cv-btn-skill nav-link p-2 mx-1">Download CV</button>
 		</div>
 	);
 }

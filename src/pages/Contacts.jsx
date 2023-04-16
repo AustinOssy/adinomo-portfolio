@@ -9,7 +9,7 @@ import '../assets/sass/_contacts.scss';
 
 function Contacts() {
 	return (
-		<div className="container pt-4 pb-4">
+		<div className="container pt-4 pb-5">
 			<div className="contacts justify-content-between px-2">
 				<IconContext.Provider value={{ color: "#343F71" }}>
 					<p>
@@ -47,7 +47,7 @@ function Contacts() {
 					</div>
 				</form>
 			</div>
-			<div className="profiles d-flex flex-column px-2">
+			<div className="profiles d-flex flex-column px-2 pb-2">
 				<IconContext.Provider value={{ size: 19, color: "white" }}>
 					<p>
 						<button className="btn-icon text-white rounded-pill px-2">
