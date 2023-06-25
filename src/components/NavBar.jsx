@@ -27,7 +27,7 @@ function NavBar() {
 					<div
 						className="collapse navbar-collapse"
 						id="collapsibleNavId">
-						<ul className="navbar-nav me-auto mt-2 mt-lg-0">
+						{/* <ul className="navbar-nav me-auto mt-2 mt-lg-0">
 							<li className="nav-item">
 								<p className="nav-link text-light">
 									HOME
@@ -48,8 +48,8 @@ function NavBar() {
 									CONTACTS
 								</p>
 							</li>
-						</ul>
-						<ul className="navbar-nav mt-2 mt-lg-0">
+						</ul> */}
+						<ul className="navbar-nav mt-2 mt-lg-0 ms-auto">
 							<li className="nav-item">
 								<a
 									href={resume}
