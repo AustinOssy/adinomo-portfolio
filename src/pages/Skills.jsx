@@ -3,13 +3,14 @@ import "/src/assets/sass/_skills.scss";
 
 function Skills() {
 	return (
-		<div className="skills container">
-			<div className="skills__about d-flex flex-column align-items-center px-3 pt-2 mt-4">
+		<div className="skills container ">
+			<h2 className="text-center fw-bolder mb-5 underline">About me</h2>
+			{/* <div className="skills__about d-flex flex-column align-items-center px-3 pt-2 mt-4">
 				<p className="">
 					Here you will find more information about me, what I do, and my current
 					skills mostly in terms of programming and technology.
 				</p>
-			</div>
+			</div> */}
 			<div className="skills__row pb-3">
 				<div className="skills__col">
 					<div className="skills__knowMe p-1">
@@ -33,6 +34,7 @@ function Skills() {
 					</a>
 				</div>
 				<div className="skills__col pb-5 p-3">
+					<h4 className="text-center">Skills</h4>
 					<div className="skills__technical gap-2">
 						<div className="skills__list">HTML</div>
 						<div className="skills__list">CSS</div>

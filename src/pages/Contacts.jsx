@@ -39,6 +39,7 @@ function Contacts() {
 
 	return (
 		<div className="container pt-4 pb-5">
+			<h2 className="text-center fw-bolder mb-5 underline">Contact me</h2>
 			<div className="contacts justify-content-between px-2">
 				<IconContext.Provider value={{ color: "#343F71" }}>
 					<p>

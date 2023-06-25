@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
+import resume from "../assets/Austin Osigbemhe CV.pdf"
 
 function NavBar() {
 	return (
@@ -28,39 +29,33 @@ function NavBar() {
 						id="collapsibleNavId">
 						<ul className="navbar-nav me-auto mt-2 mt-lg-0">
 							<li className="nav-item">
-								<NavLink
-									to={"/"}
-									className="nav-link text-light">
+								<p className="nav-link text-light">
 									HOME
-								</NavLink>
+								</p>
 							</li>
 							<li className="nav-item">
-								<NavLink
-									to={"/projects"}
-									className="nav-link text-light">
+								<p className="nav-link text-light">
 									PROJECTS
-								</NavLink>
+								</p>
 							</li>
 							<li className="nav-item">
-								<NavLink
-									to={"/skills"}
-									className="nav-link text-light">
+								<p className="nav-link text-light">
 									SKILLS
-								</NavLink>
+								</p>
 							</li>
 							<li className="nav-item">
-								<NavLink
-									to={"/contacts"}
-									className="nav-link text-light">
+								<p className="nav-link text-light">
 									CONTACTS
-								</NavLink>
+								</p>
 							</li>
 						</ul>
 						<ul className="navbar-nav mt-2 mt-lg-0">
 							<li className="nav-item">
 								<a
-									href="../assets/resume.pdf"
-									download>
+									href={resume}
+									download="Austin Osigbemhe CV"
+									target="_blank" 
+								>
 									<button className="cv-btn nav-link px-3">Resume</button>
 								</a>
 							</li>
