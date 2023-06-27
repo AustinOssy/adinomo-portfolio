@@ -1,5 +1,6 @@
 import React from "react";
 import "/src/assets/sass/_skills.scss";
+import resume from "../assets/Austin Osigbemhe CV.pdf"
 
 function Skills() {
 	return (
@@ -25,9 +26,11 @@ function Skills() {
 						<button className="btn skills__contact">CONTACTS →</button>
 					</div>
 					<a
-						href="../assets/resume.pdf"
+						href={resume}
 						className="text-decoration-none"
-						download>
+						download="Austin Osigbemhe CV"
+						target="_blank"
+						>
 						<button className="cv-btn-skill nav-link p-2 px-3 mx-1 mt-3">
 							Resume
 						</button>
