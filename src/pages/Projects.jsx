@@ -34,7 +34,8 @@ function Projects() {
 	}
 
 	return (
-		<div className="container pb-5">
+		<div id="projects"  className="container pb-5">
+			<h2 className="text-center fw-bolder mt-5 mb-3 underline">My Works</h2>
 			<div className="d-flex flex-wrap gap-5 gap-xl-4 pb-5 pt-5 justify-content-center">
 				<div className="projects__col">
 					<ProjectCard

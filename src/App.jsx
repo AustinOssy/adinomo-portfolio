@@ -8,21 +8,19 @@ import Skills from './pages/Skills';
 import "../node_modules/bootstrap/dist/js/bootstrap";
 import "../src/assets/sass/main.scss"
 import Footer from './components/Footer';
-
+import Reveal from './components/Reveal'
 
 function App() {
   return ( 
-    <BrowserRouter>
+    <div className=''>
       <NavBar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path={"/projects"} element={<Projects />} />
-        <Route path={"/skills"} element={<Skills />} />
-        <Route path={"/contacts"} element={<Contacts />} />
-      </Routes>
+      <Reveal><Home /></Reveal>
+      <Reveal><Skills /></Reveal>
+      <Reveal><Projects /></Reveal>
+      <Reveal><Contacts /></Reveal>
       <Footer />
-    </BrowserRouter>
-   );
+    </div>  
+  );
 }
 
 export default App;
