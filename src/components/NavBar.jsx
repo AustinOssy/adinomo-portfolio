@@ -14,7 +14,7 @@ function NavBar() {
 						href="#">
 						A◉
 					</a>
-					<button
+					{/* <button
 						className="navbar-toggler d-lg-none border-0"
 						type="button"
 						data-bs-toggle="collapse"
@@ -23,10 +23,10 @@ function NavBar() {
 						aria-expanded="false"
 						aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
-					</button>
+					</button> */}
 					<div
-						className="collapse navbar-collapse"
-						id="collapsibleNavId">
+						/* className="collapse navbar-collapse"
+						id="collapsibleNavId" */>
 						{/* <ul className="navbar-nav me-auto mt-2 mt-lg-0">
 							<li className="nav-item">
 								<p className="nav-link text-light">
