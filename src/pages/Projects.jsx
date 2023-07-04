@@ -1,6 +1,6 @@
 import React from "react";
 import "/src/assets/sass/_projects.scss";
-import huddle from "/src/assets/img/huddle.png";
+import loopstudios from "../assets/img/loopstudios.jpg";
 import space from "/src/assets/img/space-tour.png";
 import spyces from "/src/assets/img/spyces.png";
 import todo from "/src/assets/img/todo.png";
@@ -40,9 +40,9 @@ function Projects() {
 				<div className="projects__col">
 					<ProjectCard
 						name="Huddle Landing Page"
-						img={huddle}
-						tech="HTML, CSS"
-						link={"https://huddle-etse.netlify.app"}
+						img={loopstudios}
+						tech="HTML, CSS, Tailwindcss"
+						link={"https://eloopstudios.netlify.app"}
 					/>
 				</div>
 				<div className="projects__col">
