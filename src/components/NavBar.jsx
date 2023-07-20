@@ -8,7 +8,7 @@ function NavBar() {
 	return (
 		<div className="text-sec flex items-center p-2">
 			<Link
-				className="font-bold text-3xl tracking-[-0.5rem] text-transparent bg-clip-text bg-gradient-to-r from-sec to-success w-16"
+				className="font-bold text-[2.5rem] tracking-[-0.8rem] text-transparent bg-clip-text bg-gradient-to-r from-sec to-success w-16"
 				to="">
 				A◉
 			</Link>
