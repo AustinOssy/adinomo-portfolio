@@ -1,25 +1,13 @@
-$primary: #343F71;
-$tetiary: #FBC40E;
-$dark: rgb(29, 29, 29);
-$light: #fff;
-
-$border-radius: 7px;
-
-$spacing-md: 16px;
-$spacing-lg: 32px;
-
-$header-height: 100px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
-	font-family: "poppins";
-	src: url("/src/assets/Poppins-Regular.ttf");
+	font-family: "Libre";
+	src: url('../fonts/LibreFranklin-VariableFont_wght.ttf');
 }
-$poppins: "poppins";
 
-@mixin breakpoint($point) {
-	@if $point == md {
-		@media (min-width: 48em) {
-			@content;
-		}
-	}
+@font-face {
+	font-family: "Pacifico";
+	src: url('../fonts/Pacifico-Regular.ttf');
 }

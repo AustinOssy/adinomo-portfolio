@@ -5,20 +5,20 @@ import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-import "../node_modules/bootstrap/dist/js/bootstrap";
 import "../src/assets/sass/main.scss"
 import Footer from './components/Footer';
-import Reveal from './components/Reveal'
+import SideBar from './components/SideBar';
 
 function App() {
   return ( 
-    <div className=''>
+    <div className='font-primary bg-primary text-info'>
       <NavBar />
-      <Reveal><Home /></Reveal>
-      <Reveal><Skills /></Reveal>
-      <Reveal><Projects /></Reveal>
-      <Reveal><Contacts /></Reveal>
+      <Home />
+      <Skills />
+      <Projects />
+      <Contacts />
       <Footer />
+      <SideBar />
     </div>  
   );
 }
