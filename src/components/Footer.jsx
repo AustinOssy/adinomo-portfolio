@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "/src/assets/sass/_footer.scss";
+import { Link } from "react-scroll";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { IconContext } from "react-icons";
@@ -9,9 +8,8 @@ function Footer() {
 	const year = new Date().getFullYear()
 
 	return (
-		<div className="footer d-sm-flex align-items-center justify-content-between p-2 sticky-bottom container-fluid">
-			<div className="footer__icons text-center">
-				<IconContext.Provider value={{ size: "1.2rem", color:'white', className: "me-1" }}>
+		<div className="flex">
+			{/* <div className="flex">
 					<a href="https://github.com/Adinomo">
 						<AiOutlineGithub />
 					</a>
@@ -19,10 +17,9 @@ function Footer() {
 						<AiFillLinkedin />
 					</a>
 					<HiOutlineMail />
-				</IconContext.Provider>
-			</div>
-			<div className="text-white text-center footer__copyright">
-				© Austin Ossy {year}
+			</div> */}
+			<div className="mx-auto py-1">
+				© Austin Osigbemhe {year}
 			</div>
 		</div>
 	);
