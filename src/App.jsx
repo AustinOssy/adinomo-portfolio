@@ -10,16 +10,16 @@ import Footer from './components/Footer';
 import SideBar from './components/SideBar';
 
 function App() {
-  return ( 
-    <div className='font-primary bg-primary text-info'>
-      <NavBar />
-      <Home />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
-      <SideBar />
-    </div>  
+  return (
+     <div className="font-primary outfit bg-primary text-info px-5 md:px-7">
+        <NavBar />
+        <Home />
+        <Skills />
+        <Projects />
+        <Contacts />
+        <Footer />
+        <SideBar />
+     </div>
   );
 }
 

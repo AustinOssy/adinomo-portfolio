@@ -1,91 +1,92 @@
 import React from "react";
-import resume from "../assets/Austin Osigbemhe CV.pdf"
-import { FaHtml5, FaCss3, FaReact, FaBootstrap, FaGitAlt, FaGithub, FaNpm } from 'react-icons/fa';
+import resume from "../assets/Austin Osigbemhe CV.pdf";
+import {
+   FaHtml5,
+   FaReact,
+   FaBootstrap,
+   FaGitAlt,
+   FaGithub,
+   FaNpm,
+} from "react-icons/fa";
 import { DiSass } from "react-icons/di";
-import { TbBrandTailwind, TbBrandRedux,  } from "react-icons/tb"
+import {
+   SiNextdotjs,
+   SiTailwindcss,
+   SiJavascript,
+   SiRedux,
+   SiTypescript,
+   SiMui,
+} from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io";
 
 function Skills() {
-	return (
-		<div className="min-h-[500px]">
-			<h2 className="heading">
-				About me
-			</h2>
-			<div className="flex flex-col md:flex-row w-fit mx-auto gap-5">
-				<div className="p-3 w-full max-w-[600px]">
-					<p className="text-xl text-justify">
-						I'm a Frontend Web Developer who builds the Front-end of Websites and Web
-						Applications that leads to the success of the overall product. Check out
-						some of my work in the Projects section. Feel free to connect with me as
-						I'm open to Job opportunities where I can contribute, learn and grow. If
-						you have a good opportunity that matches my skill set and experience then
-						don't hesitate to contact me.
-					</p>
-					<button className="btn">CONTACTS →</button>
-					<br />
-					<a
-						href={resume}
-						className=""
-						download="Austin Osigbemhe CV"
-						target="_blank">
-						<button className="bg-gradient-to-r from-sec to-success text-primary font-medium p-2 px-3 shadow-[0px_0px_10px_1px] shadow-sec rounded-md pt-[0.6rem] mt-5">
-							Resume
-						</button>
-					</a>
-				</div>
-				<div className="">
-					<h4 className="text-center font-sec text-xl text-sec">Skills</h4>
-					<div className="flex flex-wrap gap-3 items-center w-full max-w-[600px] p-2 mx-auto mt-2">
-						<FaHtml5
-							size={80}
-							className="text-html"
-						/>
-						<FaCss3
-							size={77}
-							className="text-css"
-						/>
-						<div className="h-[65px] w-[70px] bg-js text-primary text-3xl font-bold rounded-sm flex justify-end items-end px-1 pt-10">
-							JS
-						</div>
-						<DiSass
-							size={80}
-							className="text-sass"
-						/>
-						<FaBootstrap
-							size={80}
-							className="text-success"
-						/>
-						<TbBrandTailwind
-							size={80}
-							className="text-sky-500"
-						/>
-						<FaReact
-							size={79}
-							className="text-react"
-						/>
-						<TbBrandRedux
-							size={80}
-							className="text-redux"
-						/>
-						<div className="h-[65px] w-[70px] bg-typescript font-semibold text-3xl rounded-sm flex justify-end items-end px-1 pt-10">
-							TS
-						</div>
-						<FaGitAlt
-							size={80}
-							className="text-git"
-						/>
-						<FaGithub
-							size={75}
-							className=""
-						/>
-						<FaNpm
-							size={80}
-							className="text-npm"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+   const handleClick = () => {
+      const subject = encodeURIComponent("Job Opportunity");
+      const body = encodeURIComponent(
+         `Dear Austin Osigbemhe,\n\n[Your Organization] is interested in discussing a potential job opportunity with you. Here is a brief overview of my requirements and what I am looking for:\n\n- Role:\n- Key Responsibilities:\n- Skills Required:\n- Expected Start Date:\n\nPlease let me know a convenient time for us to discuss this further.\n\nThank you,\n[Your Name]`
+      );
+
+      const mailtoLink = `mailto:austinossy20@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+   };
+   return (
+      <div className="min-h-[500px]">
+         <h2 className="heading">About me</h2>
+         <div className="flex flex-col md:flex-row w-fit mx-auto gap-5">
+            <div className="p-3 w-full max-w-[600px]">
+               <p className="text-[20px] leading-[38px] text-justify">
+                  I’m Austin Osigbemhe, a front-end web developer based in
+                  ilorin Nigeria, with over 5 years of experience.
+               </p>
+               <p className="text-[20px] leading-[38px] text-justify">
+                  As a Frontend Web Developer, I am passionate about building
+                  successful websites and web applications. Feel free to explore
+                  my projects to see my work in action. I am open to job
+                  opportunities where I can contribute, grow, and continue to
+                  learn. If you have a role that aligns with my skills and
+                  experience, I would love to hear from you.
+               </p>
+               <div className="flex items-center gap-5 flex-wrap">
+                  <button
+                     onClick={handleClick}
+                     className="bg-gradient-to-r from-sec to-success text-primary font-medium p-2 px-3 shadow-[0px_0px_10px_1px] shadow-sec rounded-md pt-[0.6rem] mt-5"
+                  >
+                     Hire Me
+                  </button>
+                  <a
+                     href={resume}
+                     className=""
+                     download="Austin Osigbemhe CV"
+                     target="_blank"
+                  >
+                     <button className="bg-gradient-to-r from-sec to-success text-primary font-medium p-2 px-3 shadow-[0px_0px_10px_1px] shadow-sec rounded-md pt-[0.6rem] mt-5">
+                        Resume
+                     </button>
+                  </a>
+               </div>
+            </div>
+            <div className="">
+               <h4 className="text-center font-sec text-xl text-sec">Skills</h4>
+               <div className="flex flex-wrap gap-3 items-center w-full max-w-[600px] p-2 mx-auto mt-2">
+                  <FaHtml5 size={70} color="#f16529" />
+                  <IoLogoCss3 size={70} color="#2965f1" />
+                  <SiJavascript size={60} color="#f7df1e" />
+                  <DiSass size={70} color="#cc6699" />
+                  <FaBootstrap size={70} color="#7952B3" />
+                  <SiTailwindcss size={70} color="#38bdf8" />
+                  <FaReact size={70} color="#61dafb" />
+                  <SiRedux size={70} color="#764abc" />
+                  <SiTypescript size={60} color="#3178c6" />
+                  <FaGitAlt size={70} className="text-git" />
+                  <FaGithub size={75} className="" />
+                  <FaNpm size={70} className="text-npm" />
+                  <SiNextdotjs size={70} />
+                  <SiMui size={70} color="#0081CB" />
+               </div>
+            </div>
+         </div>
+      </div>
+   );
 }
 
 export default Skills;
