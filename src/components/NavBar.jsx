@@ -6,7 +6,7 @@ import resume from "../assets/Austin Osigbemhe CV.pdf";
 
 function NavBar() {
 	return (
-		<div className="text-sec flex items-center p-2">
+		<div className="text-sec flex items-center py-4">
 			<Link
 				className="font-bold text-[2.5rem] tracking-[-0.8rem] text-transparent bg-clip-text bg-gradient-to-r from-sec to-success w-16"
 				to="">
