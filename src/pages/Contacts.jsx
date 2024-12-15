@@ -35,7 +35,7 @@ function Contacts() {
    
 
 	return (
-      <div className="px-3">
+      <div className="px-3 my-20">
          <h2 className="heading">Contact me</h2>
          <div className="flex flex-col md:flex-row w-fit mx-auto mt-5">
             <p className="mx-3">
